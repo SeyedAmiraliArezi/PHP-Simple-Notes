@@ -1,0 +1,96 @@
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  background: #18181b;
+  color: #e4e4e7;
+  padding: 48px 20px;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.container { max-width: 520px; margin: 0 auto; }
+
+h1 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #fafafa;
+  margin-bottom: 24px;
+}
+
+/* فرم */
+form {
+  background: #27272a;
+  border: 1px solid #3f3f46;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  background: #1c1c1f;
+  color: #fafafa;
+  border: 1px solid #3f3f46;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+input::placeholder, textarea::placeholder { color: #71717a; }
+input:focus, textarea:focus { outline: none; border-color: #a1a1aa; }
+
+/* دکمه‌ها */
+.buttons { display: flex; gap: 8px; }
+
+button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button[name="submit"] { background: #fafafa; color: #18181b; }
+button[name="submit"]:hover { background: #d4d4d8; }
+
+button[name="delete"] { background: #3f3f46; color: #e4e4e7; }
+button[name="delete"]:hover { background: #52525b; }
+
+/* یادداشت‌ها */
+.notes { display: flex; flex-direction: column; gap: 12px; }
+
+.note {
+  background: #27272a;
+  border: 1px solid #3f3f46;
+  border-right: 3px solid #a1a1aa;
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+
+.note:hover { background: #2e2e33; border-right-color: #fafafa; }
+
+.note h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fafafa;
+  margin-bottom: 8px;
+}
+
+.note p {
+  color: #a1a1aa;
+  font-size: 14px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+@media (max-width: 600px) {
+  .buttons { flex-direction: column; }
+}
