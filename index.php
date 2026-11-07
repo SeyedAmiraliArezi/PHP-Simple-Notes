@@ -45,6 +45,7 @@ $lines = explode("\n", trim(file_get_contents('deta.txt')));
             echo "<h3>" . htmlspecialchars(explode(" | ", $line)[0]) . "</h3>";
             echo "<p>" . htmlspecialchars(explode(" | ", $line)[1] ?? '') . "</p>";
             echo "</div>";
+            echo date('d:h');
     }
 }
 
